@@ -43,7 +43,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-10-11T06:05:59.000Z">
-<meta property="article:modified_time" content="2022-10-31T08:33:28.263Z">
+<meta property="article:modified_time" content="2022-11-02T05:40:27.827Z">
 <meta property="article:author" content="Aphelios">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1742,7 +1742,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1667358723168),
+    lastupdate: new Date(1667367662088),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2160,7 +2160,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2278,13 +2278,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="关于"
+                href="/about/" title="背景音乐"
                   
                   
                   
                     active-action="action-about"
                   >
-                  <i class='fa-solid fa-info-circle fa-fw'></i>关于
+                  <i class='fa-solid fa-compact-disc fa-fw'></i>背景音乐
                 </a>
                 
               </li>
@@ -2399,13 +2399,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="关于"
+                href="/about/" title="背景音乐"
                   
                   
                   
                     active-action="action-about"
                   >
-                  <i class='fa-solid fa-info-circle fa-fw'></i>关于
+                  <i class='fa-solid fa-compact-disc fa-fw'></i>背景音乐
                 </a>
                 
               </li>
@@ -2429,7 +2429,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper post dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2598,10 +2598,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-10-31T16:33:28+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-11-02T13:40:27+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Oct 31, 2022</p>
+    <p>更新于：Nov 2, 2022</p>
   </a>
 </div>
 
@@ -2799,14 +2799,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -3304,7 +3304,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Snake","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Aphelios","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"this is a hexo demo"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Snake"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/10/11/dongfengpo/","name":"安静"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Snake","url":"http://example.com/","keywords":null,"description":"this is a hexo demo","author":{"@type":"Person","name":"Aphelios","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"this is a hexo demo"},"publisher":{"@type":"Organization","name":"Snake","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"安静","description":"this is a hexo demo","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/10/11/dongfengpo/"},"author":{"@type":"Person","name":"Aphelios","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Snake","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/10/11/dongfengpo/","wordCount":0,"datePublished":"2022-10-11T06:05:59.000Z","dateModified":"2022-10-31T08:33:28.263Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Snake","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Aphelios","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"this is a hexo demo"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Snake"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/10/11/dongfengpo/","name":"安静"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Snake","url":"http://example.com/","keywords":null,"description":"this is a hexo demo","author":{"@type":"Person","name":"Aphelios","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"this is a hexo demo"},"publisher":{"@type":"Organization","name":"Snake","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"安静","description":"this is a hexo demo","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/10/11/dongfengpo/"},"author":{"@type":"Person","name":"Aphelios","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Snake","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/10/11/dongfengpo/","wordCount":0,"datePublished":"2022-10-11T06:05:59.000Z","dateModified":"2022-11-02T05:40:27.827Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
